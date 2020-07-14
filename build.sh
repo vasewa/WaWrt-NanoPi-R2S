@@ -85,5 +85,5 @@ popd
 # build openwrt
 pushd openwrt
 make download -j8
-make -j$(nproc)
+make -j$(($(nproc) + 1)) || make -j1 V=s
 popd
