@@ -26,24 +26,27 @@ svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/trojan lean/troja
 svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/ipt2socks lean/ipt2socks
 svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/redsocks2 lean/redsocks2
 # luci-app-filebrowser
-svn co https://github.com/project-openwrt/openwrt/trunk/package/ctcgfw/luci-app-filebrowser lean/luci-app-filebrowser
-svn co https://github.com/project-openwrt/openwrt/trunk/package/ctcgfw/filebrowser lean/filebrowser
+svn co https://github.com/project-openwrt/openwrt/branches/master/package/ctcgfw/luci-app-filebrowser lean/luci-app-filebrowser
+svn co https://github.com/project-openwrt/openwrt/branches/master/package/ctcgfw/filebrowser lean/filebrowser
 # luci-app-arpbind
 svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-arpbind lean/luci-app-arpbind
 # coremark
 svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/coremark lean/coremark
 # luci-app-xlnetacc
-svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-xlnetacc lean/luci-app-xlnetacc
+svn co https://github.com/project-openwrt/openwrt/branches/master/package/lean/luci-app-xlnetacc lean/luci-app-xlnetacc
 # luci-app-oled
 git clone --depth 1 https://github.com/NateLol/luci-app-oled.git lean/luci-app-oled
 # luci-app-unblockmusic
 svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-unblockmusic lean/luci-app-unblockmusic
+wget -P lean/luci-app-unblockmusic/root/usr/share/rpcd/acl.d https://raw.githubusercontent.com/project-openwrt/openwrt/master/package/lean/luci-app-unblockmusic/root/usr/share/rpcd/acl.d/luci-app-unblockmusic.json
 svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/UnblockNeteaseMusic lean/UnblockNeteaseMusic
 svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/UnblockNeteaseMusicGo lean/UnblockNeteaseMusicGo
 # luci-app-autoreboot
 svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-autoreboot lean/luci-app-autoreboot
+wget -P lean/luci-app-autoreboot/root/usr/share/rpcd/acl.d https://raw.githubusercontent.com/project-openwrt/openwrt/master/package/lean/luci-app-autoreboot/root/usr/share/rpcd/acl.d/luci-app-autoreboot.json
 # luci-app-vsftpd
 svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-vsftpd lean/luci-app-vsftpd
+wget -P lean/luci-app-vsftpd/root/usr/share/rpcd/acl.d https://raw.githubusercontent.com/project-openwrt/openwrt/master/package/lean/luci-app-vsftpd/root/usr/share/rpcd/acl.d/luci-app-vsftpd.json
 svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/vsftpd-alt lean/vsftpd-alt
 # luci-app-netdata
 svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-netdata lean/luci-app-netdata
