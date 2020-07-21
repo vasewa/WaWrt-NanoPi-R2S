@@ -5,6 +5,13 @@ set -eu
 rm -rf openwrt
 git clone -b nanopi-r2s https://git.openwrt.org/openwrt/staging/blocktrron.git openwrt
 
+# upgrade openwrt
+pushd openwrt
+git remote add upstream https://github.com/openwrt/openwrt.git
+git fetch upstream master
+git rebase upstream/master
+popd
+
 # customize patches
 pushd openwrt
 git am -3 ../patches/*.patch
