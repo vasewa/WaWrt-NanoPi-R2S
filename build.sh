@@ -59,6 +59,10 @@ svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/vsftpd-alt lean/v
 svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-netdata lean/luci-app-netdata
 # zh_cn to zh_Hans
 ../../scripts/convert_translation.sh
+# beardropper
+git clone https://github.com/NateLol/luci-app-beardropper package/luci-app-beardropper
+sed -i 's/"luci.fs"/"luci.sys".net/g' package/luci-app-beardropper/luasrc/model/cbi/beardropper/setting.lua
+sed -i '/firewall/d' package/luci-app-beardropper/root/etc/uci-defaults/luci-beardropper
 popd
 
 # initialize feeds
