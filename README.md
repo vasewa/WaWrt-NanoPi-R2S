@@ -1,4 +1,4 @@
-# 基于原生 OpenWrt 的 NanoPi R2s 固件
+# 基于原生 OpenWrt 的 NanoPi R2S 固件
 
 ## 温情提醒
 
@@ -8,6 +8,6 @@
 
 ## 说明
 
-- ipv4: 192.168.2.1
+- ipv4: 192.168.50.1
 - username: root
 - password: password
